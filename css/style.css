@@ -54,21 +54,21 @@ grid-template-areas:
     grid-area: banniere1;
     text-align: center;
     font-size: 10em;
-font-family: "1";
+font-family: "Allo";
 display: flex;
 justify-content: center;
 align-items: center;
 animation-name: ban1;
-animation: ban1 10s infinite alternate;
+animation-delay: 2s;
+animation-duration: 2s;
+animation-iteration-count: 10;
 
 
 }
-@keyframes ban1{
-    0% {background-color: red;}
-    25%{background-color: orange;}
-    50%{background-color: blue;}
-    75%{background-color: green;}
-  100% {background-color: yellow;}
+@keyframes ban1
+ {
+    from {background :linear-gradient(black, red, black) }
+    to{background:linear-gradient(red, rgb(73, 73, 73), red)}
 }
 .banniere2 {
     grid-area: banniere2;
